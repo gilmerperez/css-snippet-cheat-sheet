@@ -1,0 +1,200 @@
+/* color scheme sourced from http://khroma.co/generator/ */
+:root {
+  --outer-space: #33393f;
+  --bright-turquoise: #2aefcb;
+  --gin: #e0eae4;
+  --heliotrope: #e866ec;
+}
+
+/* Set content highlight color & background */
+::selection {
+  background-color: var(--bright-turquoise);
+  color: var(--outer-space);
+}
+
+/* This sets 1rem to 10px instead of the native 16px. This makes it easier to calculate font-size values for the rest of the page (Example: setting 1.6rem = 16px) */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  /* Set body font size to 1.75rem, which is 1.75x more than the font-size of 10px making it 17.5px */
+  font-size: 1.75rem;
+  line-height: 1.5;
+  color: var(--gin);
+  background-color: var(--outer-space);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.625rem;
+  color: var(--heliotrope);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+  /* Again, 4rem = 40px */
+  font-size: 4rem;
+}
+
+h2 {
+  /* 3.5rem = 35px */
+  font-size: 3.5rem;
+}
+
+h3 {
+  /* 3rem = 30px */
+  font-size: 3rem;
+}
+
+h4 {
+  /* 2.5rem = 25px */
+  font-size: 2.5rem;
+}
+
+h5 {
+  /* 2rem = 20px */
+  font-size: 2rem;
+}
+
+h6 {
+  /* 1.5rem = 15px */
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Monospace is used for the actual code displayed on the page to make it look more like we we are used to */
+code {
+  font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+    'Liberation Mono', 'Nimbus Mono L', 'Monaco', 'Courier New', Courier,
+    monospace;
+}
+
+header {
+  width: 96%;
+  padding: 2.5rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.page-title {
+  padding: 1rem 1.2rem;
+  font-size: 4.5rem;
+}
+
+main {
+  width: 96%;
+  margin: 2rem auto;
+}
+
+ /* This creates the main grid line with flexbox, I will use negative margins to offset the padding on the .card-column class */
+ .row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0px -1.5rem;
+ }
+
+ .justify-content {
+  justify-content: center;
+ }
+
+/* We will use a mobile-first approach, meaning our base styles will adhere to mobile users, then we wil make it responsive to larger screens by adding media queries */
+ .card-column {
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  /* Adds a smoth transition when everything resizes */
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+ }
+
+/* Make each .code-card a flexbox column so that we can justify and align content inside of it */
+.code-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+  padding: 2rem;
+  color: var(--heliotrope);
+  /* Outline is similar to border, but it is on the outside rather than inside and it takes up no space when it comes to the box model */
+  outline: 2px dashed var(--gin);
+  outline-offset: -2px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* We will use position and negative margin to move the header of the card, over the card's outline and make it overlap */
+.code-card .card-header {
+  position: relative;
+  margin: -4rem 0 1.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: var(--outer-space);
+  color: var(--heliotrope);
+  border: 2px solid var(--gin);
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* This sets an outer and inner drop shadow on the card to create a glowing effect on hover */
+.code-card:hover, .code-card:hover .card-header {
+  box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
+}
+
+/* This makes each cards code block grow to the height of the tallest code block on the page, making them all the same height */
+.code-card .code-block {
+  flex-grow: 1;
+}
+
+/* This will make it so that code in the <pre> tag wraps instead of overflowing */
+.code-card pre {
+white-space: pre-wrap;
+overflow: auto;
+tab-size: 4;
+padding: 1.2rem 1rem;
+color: var(--gin);
+border-radius: 8px;
+/* The linear gradiant tool helps us make a fading background effect */
+background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%);
+    display: flex;
+    align-items: center;
+}
+
+/* When any code that has a <pre> tag is clicked, it will select all of the code in that block instead of having to selecting it all manually */
+.code-card pre:active {
+  user-select: all;
+}
+
+footer {
+  margin: 1.5rem;
+  text-align: center;
+ }
+
+/* Since we are doing a mobile-first approach, we will use the "min-width" going from smallest to largest screen size */ 
+@media screen and (min-width: 768px) {
+  /* On tablets, columns will only be 50% of the width and not be able to grow */
+  .card-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  /* This will make the last child or card grow to full width if it has space to */
+  .card-column:last-child {
+    flex-grow: 1;
+  }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 992px) {
+  header {
+    width: 75%;
+  }
+
+  .card-column {
+    flex: 0 0 33%;
+  }
+}
