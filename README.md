@@ -10,6 +10,8 @@ Open the `index.html` file in a browser to view the CSS snippets.
 
 ## Instructions
 
+The application should meet the following criteria:
+
 1. Create a grid layout to display CSS snippets using Flexbox and media queries.
 
 2. Use CSS variables to maintain a clean, consistent color scheme.
