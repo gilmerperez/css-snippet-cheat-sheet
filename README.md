@@ -1,56 +1,53 @@
-# Module 02 Mini-Project: CSS Snippet Cheat Sheet
+# CSS Snippet Cheat Sheet
 
-In this activity, you will work with a group to build a webpage that will hold a collection of CSS snippets. What better way to learn CSS than to build a knowledge base of CSS?
+## Description
+
+In this project, you’ll collaborate to build a webpage that hosts a collection of CSS snippets. This will serve as both a learning tool and a reference for future CSS work.
+
+## Usage
+
+Open the `index.html` file in a browser to view the CSS snippets.
 
 ## Instructions
 
-The completed application should meet the following criteria:
+* Create a grid layout to display CSS snippets using Flexbox and media queries.
 
-* As a user, I can view a collection of labeled CSS snippets in a responsive grid.
+* Use CSS variables to maintain a clean, consistent color scheme.
 
-* As a user, I can easily identify these CSS snippets by their headings.
+* Implement clickable code snippets that are highlighted on selection.
 
-* As a user, I can highlight a code snippet by clicking on it.
+* Make the layout responsive across devices, adjusting for mobile, tablet, and desktop views.
 
-* As a user, I can view my application on a mobile device as well as a desktop.
+* Include CSS features such as linear gradients and transitions for background effects and animations.
 
-### Specifications
+## Key Features
 
-* Must use semantic HTML elements and proper indentation.
+* Responsive grid layout with Flexbox and media queries.
 
-* Use CSS variables to maintain clean and reusable values for a color scheme.
+* Clickable CSS snippets that can be easily highlighted.
 
-* Use flexbox and media queries to create a responsive grid layout.
+* Background effects using CSS linear gradients.
 
-* Each CSS snippet should have a card-like layout with the CSS syntax wrapped in an [HTML pre element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre).
+* Animations using CSS transitions.
 
-* Each CSS snippet can easily be highlighted for copying on click using the [CSS user-select property](https://developer.mozilla.org/en-US/docs/Web/CSS/user-select).
+* Clean and reusable color scheme with CSS variables.
 
-* Must incorporate a background color using a [CSS linear-gradient function](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient).
+## Technology Stack
 
-* Must incorporate a bit of animation using the [CSS transition property](https://developer.mozilla.org/en-US/docs/Web/CSS/transition).
+This application uses the following tools and technologies:
 
-* You and your group can decide which CSS styles and colors you will use to design the application, but the app needs to be a responsive. Use the following images to gain an understanding of how the app should look at different screen sizes, from a layout perspective:
+* HTML: Semantic structure with `<pre>` elements for code snippets.
 
-  * At size 992px and above, the app should resemble the following image:
+* CSS: Flexbox for layout, media queries for responsiveness, and CSS variables for theming.
 
-    ![On a desktop, the application displays three CSS code snippets per row.](./Images/01-app-desktop.png)
+## Additional Resources
 
-  * At size 768px and above, the app should resemble the following image:
+* Learn more about Flexbox: [CSS-Tricks Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-    ![On a tablet, the application displays two CSS code snippets per row.](./Images/02-app-tablet.png)
+* Learn more about CSS media queries: [MDN Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
 
-  * On mobile devices, anything under 768px, the app should resemble the following image:
+* Learn about CSS transitions: [MDN CSS Transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/transition)
 
-    ![On a mobile device, the application displays one CSS code snippet per row.](./Images/03-app-mobile.png)
+* Learn about CSS linear gradients: [MDN CSS Linear Gradients](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)
 
-## 💡 Hints
-
-* The HTML `<pre>` element is very literal about spaces and indentation. To gain a better understanding of how to work with it, check out this article on [considerations for styling the pre tag](https://css-tricks.com/considerations-styling-pre-tag/).
-
-## 🏆 Bonus
-
-* Set this project up in your own GitHub repositories so that you can deploy and use it for future reference!
-
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+* Considerations for styling the `<pre>` tag: [CSS-Tricks Styling](https://css-tricks.com/considerations-styling-pre-tag/)
