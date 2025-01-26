@@ -10,15 +10,15 @@ Open the `index.html` file in a browser to view the CSS snippets.
 
 ## Instructions
 
-* 1. Create a grid layout to display CSS snippets using Flexbox and media queries.
+1. Create a grid layout to display CSS snippets using Flexbox and media queries.
 
-* 2. Use CSS variables to maintain a clean, consistent color scheme.
+2. Use CSS variables to maintain a clean, consistent color scheme.
 
-* 3. Implement clickable code snippets that are highlighted on selection.
+3. Implement clickable code snippets that are highlighted on selection.
 
-* 4. Make the layout responsive across devices, adjusting for mobile, tablet, and desktop views.
+4. Make the layout responsive across devices, adjusting for mobile, tablet, and desktop views.
 
-* 5. Include CSS features such as linear gradients and transitions for background effects and animations.
+5. Include CSS features such as linear gradients and transitions for background effects and animations.
 
 ## Key Features
 
