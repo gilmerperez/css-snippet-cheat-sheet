@@ -2,7 +2,7 @@
 
 ## Description
 
-In this project, you’ll collaborate to build a webpage that hosts a collection of CSS snippets. This will serve as both a learning tool and a reference for future CSS work.
+A webpage that hosts a collection of CSS snippets. This will serve as both a learning tool and a reference for future CSS work.
 
 ## Usage
 
