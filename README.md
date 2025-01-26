@@ -36,9 +36,9 @@ Open the `index.html` file in a browser to view the CSS snippets.
 
 This application uses the following tools and technologies:
 
-* HTML: Semantic structure with `<pre>` elements for code snippets.
+* **HTML:** Semantic structure with `<pre>` elements for code snippets.
 
-* CSS: Flexbox for layout, media queries for responsiveness, and CSS variables for theming.
+* **CSS:** Flexbox for layout, media queries for responsiveness, and CSS variables for theming.
 
 ## Additional Resources
 
