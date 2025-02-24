@@ -1,12 +1,25 @@
 # CSS Snippet Cheat Sheet
 
-## Description
-
 A webpage that hosts a collection of CSS snippets. This will serve as both a learning tool and a reference for future CSS work.
+
+## Table of Contents
+
+- [Usage](#usage)
+- [Mock Up](#mock-up)
+- [Instructions](#instructions)
+- [Key Features](#key-features)
+- [Technology Stack](#technology-stack)
+- [Additional Resources](#additional-resources)
 
 ## Usage
 
 Open the `index.html` file in a browser to view the CSS snippets.
+
+## Mock-Up
+
+The following image shows the web application's appearance and functionality:
+
+![Screenshot](./assets/images/scWebsite.jpg)
 
 ## Instructions
 

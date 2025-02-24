@@ -1,4 +1,4 @@
-/* color scheme sourced from http://khroma.co/generator/ */
+/* Color Palette from http://khroma.co/generator/ */
 :root {
   --outer-space: #33393f;
   --bright-turquoise: #2aefcb;
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   /* Set body font size to 1.75rem, which is 1.75x more than the font-size of 10px making it 17.5px */
   font-size: 1.75rem;
   line-height: 1.5;
@@ -34,33 +34,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  /* Again, 4rem = 40px */
-  font-size: 4rem;
+  font-size: 4rem; /* Again, 4rem = 40px */
 }
 
 h2 {
-  /* 3.5rem = 35px */
-  font-size: 3.5rem;
+  font-size: 3.5rem; /* 3.5rem = 35px */
 }
 
 h3 {
-  /* 3rem = 30px */
-  font-size: 3rem;
+  font-size: 3rem; /* 3rem = 30px */
 }
 
 h4 {
-  /* 2.5rem = 25px */
-  font-size: 2.5rem;
+  font-size: 2.5rem; /* 2.5rem = 25px */
 }
 
 h5 {
-  /* 2rem = 20px */
-  font-size: 2rem;
+  font-size: 2rem; /* 2rem = 20px */
 }
 
 h6 {
-  /* 1.5rem = 15px */
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* 1.5rem = 15px */
 }
 
 p {
@@ -69,10 +63,7 @@ p {
 
 /* Monospace is used for the actual code displayed on the page to make it look more like we we are used to */
 code {
-  font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
-    'Liberation Mono', 'Nimbus Mono L', 'Monaco', 'Courier New', Courier,
-    monospace;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono" "Nimbus Mono L", "Monaco", "Courier New", Courier, monospace;
 }
 
 header {
@@ -92,26 +83,26 @@ main {
   margin: 2rem auto;
 }
 
- /* This creates the main grid line with flexbox, I will use negative margins to offset the padding on the .card-column class */
- .row {
+/* This creates the main grid line with flexbox, I will use negative margins to offset the padding on the .card-column class */
+.row {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   margin: 0px -1.5rem;
- }
+}
 
- .justify-content {
+.justify-content {
   justify-content: center;
- }
+}
 
 /* We will use a mobile-first approach, meaning our base styles will adhere to mobile users, then we wil make it responsive to larger screens by adding media queries */
- .card-column {
+.card-column {
   flex: 1 0 100%;
   padding: 1.5rem;
   /* Adds a smoth transition when everything resizes */
   transition: flex-basis 500ms linear;
   margin-bottom: 1.5rem;
- }
+}
 
 /* Make each .code-card a flexbox column so that we can justify and align content inside of it */
 .code-card {
@@ -151,18 +142,19 @@ main {
 
 /* This will make it so that code in the <pre> tag wraps instead of overflowing */
 .code-card pre {
-white-space: pre-wrap;
-overflow: auto;
-tab-size: 4;
-padding: 1.2rem 1rem;
-color: var(--gin);
-border-radius: 8px;
-/* The linear gradiant tool helps us make a fading background effect */
-background-image: linear-gradient(
+  white-space: pre-wrap;
+  overflow: auto;
+  tab-size: 4;
+  padding: 1.2rem 1rem;
+  color: var(--gin);
+  border-radius: 8px;
+  /* The linear gradiant tool helps us make a fading background effect */
+  background-image: linear-gradient(
     rgba(232, 102, 236, 0.3) 0%,
-    rgba(232, 102, 236, 0.6) 100%);
-    display: flex;
-    align-items: center;
+    rgba(232, 102, 236, 0.6) 100%
+  );
+  display: flex;
+  align-items: center;
 }
 
 /* When any code that has a <pre> tag is clicked, it will select all of the code in that block instead of having to selecting it all manually */
@@ -173,9 +165,9 @@ background-image: linear-gradient(
 footer {
   margin: 1.5rem;
   text-align: center;
- }
+}
 
-/* Since we are doing a mobile-first approach, we will use the "min-width" going from smallest to largest screen size */ 
+/* Since we are doing a mobile-first approach, we will use the "min-width" going from smallest to largest screen size */
 @media screen and (min-width: 768px) {
   /* On tablets, columns will only be 50% of the width and not be able to grow */
   .card-column {
@@ -193,7 +185,7 @@ footer {
   header {
     width: 75%;
   }
-
+  
   .card-column {
     flex: 0 0 33%;
   }
